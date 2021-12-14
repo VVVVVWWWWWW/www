@@ -27,12 +27,12 @@ class Main:
 		self.loop = 0
 		self.ips = requests.get("https://anggakurniawan.my.id/myip/").text
 		os.system("clear")
-		os.system('xdg-open https://m.facebook/MUB4SH4R')
+		os.system('xdg-open https://m.facebook.com/MUB4SH4R')
 		print(" ")
 		print("    \033[0;97mo--o    O  o     o-o    o-o o  o \n    |   |  / \ |    o   o  /    |  | \n\033[0;91m    O--o  o---o|    |   | O     O--O \n\033[0;91m    |   | |   ||    o   o  \    |  | \n\033[0;97m    o--o  o   oO---o o-o    o-o o  o ")
 		print(" \033[0;92m╔══════════════════════════════════╗ ")
 		print(" \033[0;92m╠══(##)\033[0;97m Author  : \033[0;92mMubashar Baloch  ║") 
-		print(" \033[0;92m╠══(##)\033[0;97m Whtsap  : \033[0;92m+923470336477     ║") 
+		print(" \033[0;92m╠══(##)\033[0;97m Whtsap  : \033[0;92m+923470336477    ║") 
 		print(" \033[0;92m╠══(##)\033[0;97m FB      : \033[0;92mfb.com/MUB4SH4R  ║") 
 		print(" \033[0;92m╠══(##)\033[0;92m -------------------------  ║") 
 		print(" \033[0;92m╠══(##)\033[0;92m IP      : %s   ║"%(self.ips)) 

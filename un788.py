@@ -29,7 +29,7 @@ class Main:
 		os.system("clear")
 		os.system('xdg-open https://m.facebook/MUB4SH4R')
 		print(" ")
-		print("    \033[0;91mo--o    O  o     o-o    o-o o  o \n    |   |  / \ |    o   o  /    |  | \n    O--o  o---o|    |   | O     O--O \n    |   | |   ||    o   o  \    |  | \n    o--o  o   oO---o o-o    o-o o  o\033[0;97m ")
+		print("    \033[0;97mo--o    O  o     o-o    o-o o  o \n    |   |  / \ |    o   o  /    |  | \n\033[0;91m    O--o  o---o|    |   | O     O--O \n\033[0;91m    |   | |   ||    o   o  \    |  | \n\033[0;97m    o--o  o   oO---o o-o    o-o o  o ")
 		print(" ")
 		print(" \033[0;91m(##)\033[0;97m Author  : Mubashar Baloch") 
 		print(" \033[0;91m(##)\033[0;97m Whtsap  : +923470336477") 

